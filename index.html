@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>España 2021—2025 · Crowding out, balanza de pagos y déficits gemelos</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="marketing.css">
+</head>
+<body data-theme="dark">
+
+<div class="grain" aria-hidden="true"></div>
+<div class="orb" aria-hidden="true"></div>
+<div class="prog" id="prog" aria-hidden="true"></div>
+
+<nav class="nav">
+  <div class="nav__brand">
+    <span class="mark">ES</span>
+    <b>España</b><span class="nowrap">2021—2025</span>
+  </div>
+  <div class="nav__links">
+    <a href="#2" data-go="2" data-from="2" data-to="2">Índice</a>
+    <a href="#3" data-go="3" data-from="3" data-to="7">Crowding out</a>
+    <a href="#8" data-go="8" data-from="8" data-to="11">Balanza</a>
+    <a href="#12" data-go="12" data-from="12" data-to="15">Riesgo país</a>
+    <a href="#16" data-go="16" data-from="16" data-to="20">Déficits</a>
+  </div>
+  <button class="btn btn--dark" id="btnNotes" type="button">Notas <i>N</i></button>
+</nav>
+
+<footer class="hud hud--bl"><div class="k" id="hudSection">Portada</div></footer>
+<footer class="hud hud--br">
+  <div class="idx"><span id="page">01</span> / 22</div>
+</footer>
+<div class="rail" id="rail" aria-label="Navegación de diapositivas"></div>
+
+<main class="deck" id="deck">
+
+<!-- ============================================================ 01 PORTADA -->
+<section class="slide cover dark" data-section="Portada" data-notes="Abrimos con vista aérea de la plaza de Cibeles: el edificio es sede del Ayuntamiento de Madrid, pero sirve como imagen del Estado que gasta y se endeuda. La idea que quiero instalar en 15 segundos: España tiene déficit fiscal, deuda de casi el 100% del PIB y, aun así, nadie desconfía de ella. Ese contraste es el caso. El título es provocador a propósito: 'el país que ahorra demasiado' es literal, el sector privado tiene un superávit de 5,6% del PIB.">
+  <div class="cover__media">
+    <img src="assets/img/cover_aereo.jpg" alt="Vista aérea de la plaza de Cibeles, Madrid, con bandera de España" />
+    <div class="cover__scrim"></div>
+  </div>
+
+  <span class="ring ring--a" aria-hidden="true"></span>
+  <span class="ring ring--b" aria-hidden="true"></span>
+
+  <div class="cover__content">
+    <div class="cover__kicker" data-rv>
+      <span class="pill" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.22);color:rgba(239,235,228,.82);backdrop-filter:blur(12px)">
+        Estudio de caso · Macroeconomía intermedia
+      </span>
+    </div>
+
+    <div class="eyebrow plain" style="color:rgba(239,235,228,.55);margin-bottom:.5em" data-rv style="--d:.05s">
+      Cuatro preguntas sobre una economía
+    </div>
+    <h1 class="display" data-rv style="--d:.12s">España</h1>
+    <p class="cover__hook" data-rv style="--d:.3s">El país que <em>ahorra</em> demasiado.</p>
+
+    <div class="row" style="gap:1.4em;margin-top:clamp(18px,2.4vw,34px)" data-rv style="--d:.4s">
+      <a class="btn btn--red" href="#2" data-go="2">Empezar <i>→</i></a>
+      <span class="small" style="color:rgba(239,235,228,.5);letter-spacing:.18em;text-transform:uppercase;font-size:10px">Fuente: BdE · Eurostat · BCE</span>
+    </div>
+
+    <div class="cover__foot">
+      <ul class="topics" data-rv style="--d:.5s">
+        <li><b>01</b> Crowding out interno</li>
+        <li><b>02</b> Balanza de pagos</li>
+        <li><b>03</b> Riesgo país</li>
+        <li><b>04</b> Déficits gemelos</li>
+      </ul>
+      <div class="cover__years" data-rv style="--d:.58s">22 escenas</div>
+    </div>
+  </div>
+
+  <div class="chip bob" style="right:15vw;top:20vh;--d:.7s" data-rv><b>+3,2%</b><span>Cuenta corriente</span></div>
+  <div class="chip bob bob--slow" style="right:5vw;top:42vh;--d:.8s" data-rv><b>~50 p.b.</b><span>Prima de riesgo</span></div>
+  <div class="chip bob" style="right:25vw;top:58vh;--d:.9s" data-rv><b>−2,4%</b><span>Déficit público</span></div>
+</section>
+
+<!-- ============================================================ 02 AGENDA -->
+<section class="slide flat" data-section="Índice" data-notes="Marco las cuatro preguntas del parcial y adelanto la respuesta de cada una. Lo importante aquí no es leerlas: es que la clase sepa que las cuatro convergen en la misma identidad contable. Si alguien pregunta por qué el orden, es porque el crowding out interno explica el déficit público, la balanza explica el lado externo, el riesgo país es el precio que paga el mercado y los déficits gemelos son la pregunta que une las tres piezas.">
+  <div class="wrap agenda">
+    <div class="stack">
+      <div class="eyebrow" data-rv><span class="red">00</span>&nbsp; Índice</div>
+      <h2 class="title" data-rv style="--d:.08s;margin-top:.35em">Cuatro preguntas,<br>una misma<br>economía.</h2>
+      <p class="body" data-rv style="--d:.18s;margin-top:1.4em">Cada pregunta del parcial se responde con la misma identidad contable. El caso español es interesante porque <em style="font-family:var(--serif);font-style:italic;color:var(--ink)">las respuestas no son las que la teoría sugiere</em>.</p>
+      <div class="row" data-rv style="--d:.26s;margin-top:1.9em">
+        <span class="pill">Datos 2021—2025</span>
+        <span class="pill">Fuente: BdE · Eurostat · BCE</span>
+      </div>
+    </div>
+
+    <div>
+      <ul class="qlist">
+        <li data-rv style="--d:.1s">
+          <span class="n">01</span>
+          <div>
+            <h3>Crowding out interno</h3>
+            <p>¿El Estado le quita el crédito a las empresas? <em>Sí, pero el canal está atenuado.</em></p>
+          </div>
+        </li>
+        <li data-rv style="--d:.18s">
+          <span class="n">02</span>
+          <div>
+            <h3>Balanza de pagos</h3>
+            <p>¿España vive por encima de sus posibilidades? <em>No: lleva una década prestando al mundo.</em></p>
+          </div>
+        </li>
+        <li data-rv style="--d:.26s">
+          <span class="n">03</span>
+          <div>
+            <h3>Riesgo país</h3>
+            <p>¿Cuánto le cuesta financiarse? <em>Unos 50 p.b. sobre Alemania: mínimo en 17 años.</em></p>
+          </div>
+        </li>
+        <li data-rv style="--d:.34s">
+          <span class="n">04</span>
+          <div>
+            <h3>Déficits gemelos</h3>
+            <p>¿Déficit fiscal + déficit externo? <em>No hay gemelos: el ahorro privado lo evita.</em></p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 03 DIVISOR 01 -->
+<section class="slide divider dark" data-section="01 · Crowding out interno" data-notes="Entramos al primer bloque. Recordar la definición en una frase: el Estado pide prestado dentro del país y desplaza inversión privada. Aquí conviene aclarar que 'crowding out' no significa que el gasto público sea inútil, sino que una parte del gasto se financia con recursos que iban a otra parte.">
+  <div class="divider__bg" style="background-image:url('assets/img/euro_manos.jpg');background-position:52% 46%"></div>
+  <div class="divider__veil"></div>
+  <div class="stripe"></div>
+  <div class="ghost parallax" style="--px:-22px;--py:10px">01</div>
+  <div class="wrap" style="max-width:60%">
+    <div class="eyebrow" style="color:rgba(239,235,228,.6)"><span class="red">Sección 01</span>&nbsp; de 04</div>
+    <h2 style="--d:.08s">Crowding out<br>interno</h2>
+    <p style="--d:.18s">Cuando el Estado compite por el crédito de quienes ahorran y encarece la inversión privada.</p>
+    <div class="row" style="margin-top:clamp(18px,2.4vw,34px)" style="--d:.28s">
+      <a class="btn btn--ghost" href="#4" data-go="4">Entrar al bloque <i>→</i></a>
+    </div>
+  </div>
+  <div class="divider__glass" style="--d:.36s">
+    <span class="k">La clave del bloque</span>
+    <b>El gasto público no elimina el ahorro: sube su precio.</b>
+    <div class="rowdot"><i class="on"></i><i></i><i></i><i></i></div>
+  </div>
+</section>
+
+<!-- ============================================================ 04 DEFINICIÓN -->
+<section class="slide" data-section="01 · Crowding out interno" data-notes="Definición operativa en tres piezas: hay déficit (G mayor que T), el Tesoro emite bonos y compite en el mercado de fondos prestables, y eso sube la tasa de interés. El resultado no es que 'desaparezca' el dinero, es que sube su precio. La frase del pie es la que quiero que se lleven: no es que el Estado se lleve el dinero, es que sube su precio.">
+  <div class="wrap split">
+    <div class="stack">
+      <div class="eyebrow" data-rv><span class="red">01</span>&nbsp; Definición</div>
+      <h2 class="title" data-rv style="--d:.08s;margin-top:.3em">El Estado compra<br>crédito. La empresa<br>se queda sin él.</h2>
+      <p class="body" data-rv style="--d:.18s;margin-top:1.3em;max-width:40ch">El Gobierno gasta más de lo que recauda (<b class="nowrap" style="color:var(--ink)">G &gt; T</b>), sale a pedir prestado dentro del país y absorbe parte del ahorro disponible. Con menos fondos y más demanda, el precio del dinero sube: pedir prestado se vuelve caro justo para quien iba a invertir.</p>
+      <div class="hair" data-rv style="--d:.28s;margin:1.9em 0 1.5em"></div>
+      <p class="quote" data-rv style="--d:.34s">No es que el Estado «se lleve» el dinero: <b>es que sube su precio</b>.</p>
+    </div>
+
+    <div class="termrows">
+      <div class="termrow" data-rv style="--d:.12s">
+        <div>
+          <span class="k">La variable</span>
+          <h4>Déficit fiscal (G − T)</h4>
+          <p>El gasto público menos los impuestos netos de transferencias.</p>
+        </div>
+        <span class="sym">G−T</span>
+      </div>
+      <div class="termrow" data-rv style="--d:.2s">
+        <div>
+          <span class="k">El instrumento</span>
+          <h4>Bonos soberanos</h4>
+          <p>La deuda que emite el Tesoro para financiar ese hueco. Compite con el crédito privado.</p>
+        </div>
+        <span class="sym">r ↑</span>
+      </div>
+      <div class="termrow" data-rv style="--d:.28s">
+        <div>
+          <span class="k">El precio</span>
+          <h4>La tasa de interés</h4>
+          <p>El tipo que equilibra el mercado de fondos prestables.</p>
+        </div>
+        <span class="sym">I ↓</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 05 MECANISMO -->
+<section class="slide dark" data-section="01 · Crowding out interno" data-notes="Este es el paso a paso que hay que poder recitar sin diapositiva. Insistir en el paso 3: el ahorro nacional cae porque el ahorro público es negativo. Los cinco pasos son una cadena causal, no una lista. Si el profesor pregunta dónde se rompe, la respuesta está en la siguiente diapositiva: en una unión monetaria el paso 4 no se transmite al tipo de cambio.">
+  <div class="wrap">
+    <div class="row" style="justify-content:space-between;align-items:flex-end;margin-bottom:clamp(26px,3.4vw,52px)">
+      <div class="stack">
+        <div class="eyebrow" data-rv><span class="red-2" style="color:var(--red-2)">01</span>&nbsp; Mecanismo de transmisión</div>
+        <h2 class="title title--m" data-rv style="--d:.08s;margin-top:.3em;max-width:20ch">Del déficit a la<br>inversión que no ocurre.</h2>
+      </div>
+      <div class="small mono" data-rv style="--d:.2s;text-align:right;letter-spacing:.18em">S = S<sub>privado</sub> + (T − G)</div>
+    </div>
+
+    <div class="steps">
+      <div class="step" data-rv style="--d:.1s">
+        <div class="step__dot"></div>
+        <span class="step__n">Paso 01</span>
+        <h4>Sube el déficit</h4>
+        <p>El Gobierno gasta más de lo que recauda y necesita financiar la diferencia.</p>
+      </div>
+      <div class="step" data-rv style="--d:.18s">
+        <div class="step__dot"></div>
+        <span class="step__n">Paso 02</span>
+        <h4>Emite bonos</h4>
+        <p>El Tesoro entra al mercado de fondos prestables a competir por el ahorro.</p>
+      </div>
+      <div class="step" data-rv style="--d:.26s">
+        <div class="step__dot"></div>
+        <span class="step__n">Paso 03</span>
+        <h4>Cae el ahorro nacional</h4>
+        <p>El ahorro público es negativo y resta capacidad de financiación al sistema.</p>
+      </div>
+      <div class="step" data-rv style="--d:.34s">
+        <div class="step__dot"></div>
+        <span class="step__n">Paso 04</span>
+        <h4>Sube la tasa r</h4>
+        <p>Más demanda de fondos con la misma oferta: el precio del crédito aumenta.</p>
+      </div>
+      <div class="step" data-rv style="--d:.42s">
+        <div class="step__dot"></div>
+        <span class="step__n">Paso 05</span>
+        <h4>Cae la inversión</h4>
+        <p>Con crédito más caro, las empresas aplazan maquinaria, fábricas e innovación.</p>
+      </div>
+    </div>
+
+    <div class="steps__res">
+      <span class="k" data-rv style="--d:.5s">Resultado</span>
+      <span class="v" data-rv style="--d:.56s">El gasto público sustituye inversión privada: ΔG &gt; 0 desplaza ΔI &lt; 0.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 06 FONDOS PRESTABLES -->
+<section class="slide" data-section="01 · Crowding out interno" data-notes="Dibujo del mercado de fondos prestables. La oferta de ahorro se desplaza a la izquierda cuando el Estado pide prestado; el nuevo equilibrio tiene más tasa y menos cantidad de inversión financiada. Si preguntan por la pendiente: la demanda de fondos es descendente porque a mayor tasa, menos proyectos rentables; la oferta es ascendente porque a mayor tasa, más gente está dispuesta a ahorrar.">
+  <div class="wrap split split--chart">
+    <div class="stack">
+      <div class="eyebrow" data-rv><span class="red">01</span>&nbsp; El mercado de fondos prestables</div>
+      <h2 class="title title--m" data-rv style="--d:.08s;margin-top:.3em">El mecanismo,<br>dibujado.</h2>
+      <p class="body" data-rv style="--d:.16s;margin-top:1.2em">La oferta de fondos (ahorro) se desplaza a la izquierda cuando el Estado aparece como demandante. El nuevo equilibrio se alcanza con una tasa más alta y menos inversión financiada.</p>
+      <div class="stack" style="gap:.7em;margin-top:1.6em">
+        <div class="row" data-rv style="--d:.24s"><span style="width:26px;height:2px;background:var(--red)"></span><span class="small mono" style="letter-spacing:.14em">S′ · OFERTA CON DÉFICIT</span></div>
+        <div class="row" data-rv style="--d:.3s"><span style="width:26px;height:2px;background:rgba(16,15,14,.5)"></span><span class="small mono" style="letter-spacing:.14em">S · AHORRO NACIONAL</span></div>
+        <div class="row" data-rv style="--d:.36s"><span style="width:26px;height:2px;background:var(--ink)"></span><span class="small mono" style="letter-spacing:.14em">D · INVERSIÓN</span></div>
+      </div>
+    </div>
+
+    <div class="stack" data-rv style="--d:.12s">
+      <svg class="chart chart--mid" viewBox="0 0 760 520" role="img" aria-label="Mercado de fondos prestables: la oferta se desplaza y sube la tasa">
+        <defs>
+          <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0 0 L10 5 L0 10 z" fill="#B0121B"/>
+          </marker>
+        </defs>
+        <line class="axis" x1="90" y1="440" x2="745" y2="440"/>
+        <line class="axis" x1="90" y1="440" x2="90" y2="55"/>
+        <text x="742" y="432" class="lbl" text-anchor="end">Q · fondos</text>
+        <text x="76" y="40" class="lbl">r</text>
+
+        <line x1="120" y1="440" x2="400" y2="150" class="draw" stroke="#B0121B" stroke-width="2.6"/>
+        <line x1="200" y1="440" x2="480" y2="150" class="draw" stroke="rgba(16,15,14,.45)" stroke-width="2.2"/>
+        <line x1="200" y1="150" x2="520" y2="440" class="draw" stroke="#100F0E" stroke-width="2.2"/>
+
+        <!-- desplazamiento -->
+        <path d="M360 283 L318 251" stroke="rgba(176,18,27,.6)" stroke-width="1.4" stroke-dasharray="3 4" marker-end="url(#arw)"/>
+
+        <!-- equilibrio inicial -->
+        <line x1="90" y1="285" x2="349" y2="285" stroke="rgba(16,15,14,.24)" stroke-width="1" stroke-dasharray="2 6"/>
+        <line x1="349" y1="440" x2="349" y2="285" stroke="rgba(16,15,14,.24)" stroke-width="1" stroke-dasharray="2 6"/>
+        <circle cx="349" cy="285" r="5" fill="#100F0E"/>
+        <text x="80" y="290" class="lbl" text-anchor="end">r₀</text>
+        <text x="349" y="470" class="lbl" text-anchor="middle">Q₀</text>
+
+        <!-- nuevo equilibrio -->
+        <line x1="90" y1="247" x2="307" y2="247" stroke="rgba(176,18,27,.55)" stroke-width="1" stroke-dasharray="2 6"/>
+        <line x1="307" y1="440" x2="307" y2="247" stroke="rgba(176,18,27,.55)" stroke-width="1" stroke-dasharray="2 6"/>
+        <circle cx="307" cy="247" r="7" fill="#B0121B"/>
+        <circle cx="307" cy="247" r="13" fill="none" stroke="rgba(176,18,27,.35)" stroke-width="1.4"/>
+        <text x="80" y="252" class="lbl" text-anchor="end" fill="#B0121B">r₁</text>
+        <text x="307" y="492" class="lbl" text-anchor="middle" fill="#B0121B">Q₁</text>
+
+        <text x="404" y="126" class="lbl" fill="#B0121B">S′</text>
+        <text x="492" y="124" class="lbl">S</text>
+        <text x="528" y="428" class="lbl">D</text>
+      </svg>
+      <p class="small" data-rv style="--d:.2s;max-width:46ch">El Tesoro emite bonos → la oferta de fondos se contrae y el equilibrio sube por la curva de demanda.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 07 EUROZONA -->
+<section class="slide dark" data-section="01 · Crowding out interno" data-notes="El matiz que separa al caso español del libro de texto: en una unión monetaria el déficit de un país no mueve la tasa de toda la eurozona, porque el mercado de capitales es continental y el BCE fija el precio del dinero. Pero el canal bancario sigue existiendo: los bancos españoles compran deuda soberana y reducen el crédito a pymes. Conclusión: crowding out moderado, no nulo.">
+  <div class="wrap split split--chart" style="align-items:start;gap:clamp(26px,3.6vw,64px)">
+    <div class="stack">
+      <div class="eyebrow" data-rv><span style="color:var(--red-2)">01</span>&nbsp; El matiz europeo</div>
+      <h2 class="title title--m" data-rv style="--d:.08s;margin-top:.3em">Una moneda,<br>un mercado,<br>un banco central.</h2>
+      <p class="body" data-rv style="--d:.18s;margin-top:1.3em;max-width:30ch">Por eso el crowding out español es moderado y no el de un país con moneda propia.</p>
+    </div>
+
+    <div class="stack" style="gap:clamp(16px,2.2vw,32px)">
+      <div class="reasons" style="max-width:58ch">
+        <div class="reason" data-rv style="--d:.14s">
+          <span class="n">01</span>
+          <div>
+            <h4>El Tesoro no «seca» el ahorro europeo</h4>
+            <p>España compite por fondos con 19 países y un mercado de capitales integrado.</p>
+          </div>
+        </div>
+        <div class="reason" data-rv style="--d:.22s">
+          <span class="n">02</span>
+          <div>
+            <h4>El BCE fija el precio del dinero</h4>
+            <p>La política monetaria es única: el déficit fiscal no dispara la tasa de toda la eurozona.</p>
+          </div>
+        </div>
+        <div class="reason" data-rv style="--d:.3s">
+          <span class="n">03</span>
+          <div>
+            <h4>Pero el canal bancario existe</h4>
+            <p>Los bancos españoles compran deuda soberana y cierran el grifo del crédito a las pymes.</p>
+          </div>
+        </div>
+      </div>
+
+      <figure class="media media--band" data-rv style="--d:.38s">
+        <img src="assets/img/euro_band.jpg" alt="Banderas de España y monedas de euro">
+        <figcaption class="chip"><b>20 · 1 · 0</b><span>países · moneda · tipos de cambio propios</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 08 DIVISOR 02 -->
+<section class="slide divider dark" data-section="02 · Balanza de pagos" data-notes="Segundo bloque. Definir balanza de pagos en una frase: el registro de todas las transacciones de residentes con el resto del mundo. Para el parcial lo que importa es la cuenta corriente, que mide la economía real. Y aquí viene el dato que sorprende: España no es el país deficitario crónico que era antes de 2008.">
+  <div class="divider__bg" style="background-image:url('assets/img/cibeles.jpg');background-position:58% 38%"></div>
+  <div class="divider__veil"></div>
+  <div class="stripe"></div>
+
+  <div class="ghost ghost--solid parallax" style="--px:-18px;--py:14px">02</div>
+  <div class="wrap" style="max-width:60%">
+    <div class="eyebrow" data-rv style="color:rgba(239,235,228,.6)"><span class="red">Sección 02</span>&nbsp; de 04</div>
+    <h2 data-rv style="--d:.08s">Balanza<br>de pagos</h2>
+    <p data-rv style="--d:.18s">La economía real frente al mundo: qué vende España, qué compra y con qué se financia.</p>
+    <div class="row" style="margin-top:clamp(18px,2.4vw,34px)" data-rv style="--d:.28s">
+      <a class="btn btn--ghost" href="#9" data-go="9">Entrar al bloque <i>→</i></a>
+    </div>
+  </div>
+  <div class="divider__glass" data-rv style="--d:.36s">
+    <span class="k">La clave del bloque</span>
+    <b>España vende servicios al mundo y le sobra dinero.</b>
+    <div class="rowdot"><i></i><i class="on"></i><i></i><i></i></div>
+  </div>
+</section>
+
+<!-- ============================================================ 09 CIFRA -->
+<section class="slide dark" data-section="02 · Balanza de pagos" data-notes="La cifra que hay que memorizar: 3,2% del PIB de superávit en cuenta corriente en 2025. Traducido: España presta ahorro al resto del mundo, no pide prestado. Esto es lo que rompe la intuición de que un país con déficit fiscal está condenado a tener déficit externo. Más de una década consecutiva en positivo, incluso en 2022 con la crisis energética.">
+  <div class="divider__bg" style="background-image:url('assets/img/euro_band.jpg');opacity:.62"></div>
+  <div class="divider__veil" style="background:linear-gradient(90deg,rgba(9,8,8,.9) 0%,rgba(9,8,8,.72) 46%,rgba(9,8,8,.22) 100%)"></div>
+  <div class="wrap split">
+    <div class="stack">
+      <div class="eyebrow" data-rv><span style="color:var(--red-2)">02</span>&nbsp; Cuenta corriente · 2025</div>
+      <div class="stat stat--xl" style="color:var(--bone);margin-top:.1em" data-rv>
+        <span data-count="3.2" data-dec="1" data-prefix="+" data-suffix="">+3,2</span><sup>% del PIB</sup>
+      </div>
+      <p class="serif" style="font-size:clamp(20px,2.2vw,36px);color:rgba(239,235,228,.9);max-width:22ch;margin-top:.3em" data-rv style="--d:.18s">
+        España no le pide prestado al mundo: <span style="color:var(--gold)">le presta</span>.
+      </p>
+      <div class="spark" data-rv style="--d:.36s">
+        <svg viewBox="0 0 430 96" class="chart" aria-hidden="true">
+          <line x1="10" y1="78" x2="416" y2="78" stroke="rgba(239,235,228,.14)" stroke-width="1"/>
+          <path d="M10 66 L112 69 L214 38 L316 33 L404 30" fill="none" stroke="#C83A2A"
+                stroke-width="2.2" stroke-linejoin="round" class="draw"/>
+          <circle cx="404" cy="30" r="4.5" fill="#C83A2A"/>
+          <text x="10" y="93" class="lbl" style="font-size:9px">2021</text>
+          <text x="404" y="93" class="lbl" style="font-size:9px" text-anchor="end">2025</text>
+        </svg>
+        <span class="small" style="letter-spacing:.16em;color:rgba(239,235,228,.4)">EVOLUCIÓN DE LA CUENTA CORRIENTE</span>
+      </div>
+    </div>
+    <div class="stack" style="gap:1.4em">
+      <div class="hair" data-rv style="--d:.1s"></div>
+      <p class="small" data-rv style="--d:.18s;max-width:34ch;letter-spacing:.02em;line-height:1.7">Más de una década consecutiva con saldo positivo, incluso en años de crisis. El superávit no depende del ciclo: depende de la estructura de la economía.</p>
+      <div class="kpis" data-rv style="--d:.26s">
+        <div class="kpi"><span class="v">48.100<small> M€</small></span><span class="k">Récord 2024</span></div>
+        <div class="kpi"><span class="v">97<small> M</small></span><span class="k">Turistas 2025</span></div>
+        <div class="kpi"><span class="v">+5,6<small>%</small></span><span class="k">Ahorro privado</span></div>
+        <div class="kpi"><span class="v">−2,4<small>%</small></span><span class="k">Déficit público</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 10 GRÁFICO CC -->
+<section class="slide" data-section="02 · Balanza de pagos" data-notes="Recorrer los cinco puntos con una frase por año. 2021: salida de la pandemia con turismo a medio gas. 2022: el año difícil, la energía disparó las importaciones y aun así hubo superávit gracias al turismo. 2023 y 2024: récords, con energía más barata y servicios empresariales creciendo. 2025: consolidación en torno al 3%. Si el profesor pregunta por el dato exacto de 2024, son 48.100 millones de euros.">
+  <div class="wrap">
+    <div class="row" style="justify-content:space-between;align-items:flex-end;margin-bottom:clamp(18px,2.4vw,38px)">
+      <div class="stack">
+        <div class="eyebrow" data-rv><span class="red">02</span>&nbsp; Cuenta corriente · % del PIB</div>
+        <h2 class="title title--m" data-rv style="--d:.08s;margin-top:.25em">Cinco años de superávit.</h2>
+      </div>
+      <p class="small" data-rv style="--d:.16s;max-width:26ch;text-align:right">Ni la pandemia ni la crisis energética lograron llevarla a terreno negativo.</p>
+    </div>
+
+    <div class="chartcard" data-rv style="--d:.12s">
+      <svg class="chart" viewBox="0 0 1040 400" role="img" aria-label="Evolución de la cuenta corriente 2021-2025">
+        <defs>
+          <linearGradient id="ccFill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#B0121B" stop-opacity=".22"/>
+            <stop offset="1" stop-color="#B0121B" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+
+        <!-- rejilla -->
+        <g>
+          <line class="grid" x1="90" y1="330" x2="1000" y2="330"/>
+          <line class="grid" x1="90" y1="260" x2="1000" y2="260"/>
+          <line class="grid" x1="90" y1="190" x2="1000" y2="190"/>
+          <line class="grid" x1="90" y1="120" x2="1000" y2="120"/>
+          <line class="grid" x1="90" y1="50" x2="1000" y2="50"/>
+          <text x="60" y="334" class="lbl">0</text>
+          <text x="52" y="264" class="lbl">1</text>
+          <text x="52" y="194" class="lbl">2</text>
+          <text x="52" y="124" class="lbl">3</text>
+          <text x="52" y="54" class="lbl">4</text>
+        </g>
+
+        <!-- área -->
+        <path d="M140 274 L380 288 L620 141 L860 120 L980 106 L980 330 L140 330 Z" fill="url(#ccFill)" class="area"/>
+        <!-- línea -->
+        <path d="M140 274 L380 288 L620 141 L860 120 L980 106"
+              fill="none" stroke="#B0121B" stroke-width="2.6" stroke-linejoin="round" class="draw"/>
+
+        <!-- puntos -->
+        <g class="pts">
+          <circle cx="140" cy="274" r="5" fill="#100F0E"/>
+          <circle cx="380" cy="288" r="5" fill="#100F0E"/>
+          <circle cx="620" cy="141" r="5" fill="#100F0E"/>
+          <circle cx="860" cy="120" r="5" fill="#100F0E"/>
+          <circle cx="980" cy="106" r="6" fill="#B0121B"/>
+        </g>
+
+        <!-- valores -->
+        <text x="140" y="252" class="val" text-anchor="middle">+0,8</text>
+        <text x="380" y="266" class="val" text-anchor="middle">+0,6</text>
+        <text x="620" y="119" class="val" text-anchor="middle">+2,7</text>
+        <text x="860" y="98" class="val" text-anchor="middle">+3,0</text>
+        <text x="980" y="84" class="val" text-anchor="middle" fill="#B0121B">+3,2</text>
+
+        <!-- años -->
+        <text x="140" y="362" class="lbl" text-anchor="middle">2021</text>
+        <text x="380" y="362" class="lbl" text-anchor="middle">2022</text>
+        <text x="620" y="362" class="lbl" text-anchor="middle">2023</text>
+        <text x="860" y="362" class="lbl" text-anchor="middle">2024</text>
+        <text x="980" y="362" class="lbl" text-anchor="middle">2025</text>
+
+        <!-- hitos -->
+        <g class="anns">
+          <text x="140" y="390" class="ann" text-anchor="middle">salida de la pandemia</text>
+          <text x="380" y="390" class="ann" text-anchor="middle">crisis energética</text>
+          <text x="620" y="390" class="ann" text-anchor="middle">récord turístico</text>
+          <text x="860" y="390" class="ann" text-anchor="middle">48.100 M€</text>
+          <text x="980" y="390" class="ann" text-anchor="middle">fondos UE</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 11 BIENES VS SERVICIOS -->
+<section class="slide flat" data-section="02 · Balanza de pagos" data-notes="Aquí está la clave estructural: España compra bienes al exterior más de lo que vende, sobre todo energía, coches y tecnología. Lo compensa el turismo y los servicios profesionales, que generan un superávit enorme. El resultado neto es positivo. La lectura crítica: la cuenta corriente española descansa sobre el turismo, y eso es una fortaleza y una vulnerabilidad al mismo tiempo.">
+  <div class="wrap">
+    <div class="eyebrow" data-rv><span class="red">02</span>&nbsp; Composición de la balanza</div>
+    <h2 class="title title--m" data-rv style="--d:.06s;margin:.28em 0 clamp(22px,2.8vw,46px)">Dos balanzas, un solo resultado.</h2>
+
+    <div style="display:grid;grid-template-columns:1fr 1px 1fr;gap:clamp(20px,3.4vw,64px);align-items:start">
+      <div class="stack" style="gap:.6em">
+        <div class="row" style="justify-content:space-between;align-items:baseline" data-rv style="--d:.12s">
+          <span class="bar__k" style="font-size:clamp(10px,.76vw,12px)">Balanza de bienes</span>
+          <span class="stat stat--l" style="color:var(--red);line-height:.8">−</span>
+        </div>
+        <div class="hair" data-rv style="--d:.16s"></div>
+        <h3 class="title title--s" data-rv style="--d:.2s;margin-top:.4em">Déficit estructural</h3>
+        <p class="body" data-rv style="--d:.26s;margin-top:.5em">España compra al exterior más bienes físicos de los que vende: combustibles, vehículos, maquinaria y tecnología. No produce petróleo ni gas, y eso se nota en cada crisis energética.</p>
+        <ul class="bullets" data-rv style="--d:.32s">
+          <li><b>—</b><span>Energía importada: el rubro que más pesa en la factura.</span></li>
+          <li><b>—</b><span>Bienes de equipo y tecnología con alto contenido importado.</span></li>
+        </ul>
+      </div>
+
+      <div style="background:var(--hair);height:100%;min-height:200px" data-rv style="--d:.2s"></div>
+
+      <div class="stack" style="gap:.6em">
+        <div class="row" style="justify-content:space-between;align-items:baseline" data-rv style="--d:.2s">
+          <span class="bar__k" style="font-size:clamp(10px,.76vw,12px)">Balanza de servicios</span>
+          <span class="stat stat--l" style="color:var(--ink);line-height:.8">+</span>
+        </div>
+        <div class="hair" data-rv style="--d:.24s"></div>
+        <h3 class="title title--s" data-rv style="--d:.28s;margin-top:.4em">Superávit récord</h3>
+        <p class="body" data-rv style="--d:.34s;margin-top:.5em">El turismo y los servicios profesionales generan un excedente tan grande que cubre el hueco de los bienes y deja la cuenta corriente en positivo.</p>
+        <ul class="bullets" data-rv style="--d:.4s">
+          <li><b>+</b><span>Turismo: casi 97 millones de visitantes en 2025.</span></li>
+          <li><b>+</b><span>Servicios empresariales: consultoría, ingeniería, tecnología.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top:clamp(22px,3vw,44px);padding-top:1.1em;border-top:1px solid var(--hair);justify-content:space-between;flex-wrap:wrap;gap:1.2em" data-rv style="--d:.46s">
+      <span class="small mono" style="letter-spacing:.2em">SERVICIOS − BIENES = CUENTA CORRIENTE</span>
+      <span class="mono" style="font-size:clamp(15px,1.5vw,24px);color:var(--red);letter-spacing:.02em">+3,2% del PIB</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 12 DIVISOR 03 -->
+<section class="slide divider dark" data-section="03 · Riesgo país" data-notes="Tercer bloque: el precio de la confianza. Antes de entrar en la definición, plantear la pregunta: si España debe el 100% del PIB, ¿por qué le prestan casi al mismo precio que a Alemania? La respuesta es el resto de la sección.">
+  <div class="divider__bg" style="background-image:url('assets/img/billetes_strip.jpg');background-position:52% 34%;background-size:cover;filter:blur(11px) brightness(.66) saturate(1.2) grayscale(.15);transform:scale(1.12)"></div>
+  <div class="divider__veil"></div>
+  <div class="stripe"></div>
+  <div class="ghost parallax" style="--px:20px;--py:-12px">03</div>
+  <div class="wrap" style="max-width:60%">
+    <div class="eyebrow" data-rv style="color:rgba(239,235,228,.6)"><span class="red">Sección 03</span>&nbsp; de 04</div>
+    <h2 data-rv style="--d:.08s">Riesgo<br>país</h2>
+    <p data-rv style="--d:.18s">La prima que exige el mercado por prestarle a España en lugar de a Alemania.</p>
+    <div class="row" style="margin-top:clamp(18px,2.4vw,34px)" data-rv style="--d:.28s">
+      <a class="btn btn--ghost" href="#13" data-go="13">Entrar al bloque <i>→</i></a>
+    </div>
+  </div>
+  <div class="divider__glass" data-rv style="--d:.36s">
+    <span class="k">La clave del bloque</span>
+    <b>Debe el 100% del PIB y paga casi como Alemania.</b>
+    <div class="rowdot"><i></i><i></i><i class="on"></i><i></i></div>
+  </div>
+</section>
+
+<!-- ============================================================ 13 QUÉ ES -->
+<section class="slide" data-section="03 · Riesgo país" data-notes="La fórmula es una resta de dos tasas: el bono español a 10 años menos el Bund alemán a 10 años. Todo se lee en puntos básicos: 100 p.b. son 1%. El termómetro muestra el contraste histórico: en julio de 2012 la prima española superó los 600 p.b.; hoy está alrededor de 50. Esa caída es la historia de la última década.">
+  <div class="wrap split">
+    <div class="stack">
+      <div class="eyebrow" data-rv><span class="red">03</span>&nbsp; Definición y fórmula</div>
+      <h2 class="title title--m" data-rv style="--d:.08s;margin-top:.3em">El sobrecosto<br>de la desconfianza.</h2>
+
+      <div style="border:1px solid var(--hair);padding:clamp(14px,1.6vw,26px);margin-top:1.5em" data-rv style="--d:.16s">
+        <div class="small mono" style="letter-spacing:.22em;color:var(--red);margin-bottom:.7em">PRIMA DE RIESGO</div>
+        <div class="serif" style="font-size:clamp(14px,1.25vw,21px);line-height:1.35;color:var(--ink)">
+          Tasa bono España 10a <span style="color:var(--red)">−</span> Tasa Bund Alemania 10a
+        </div>
+      </div>
+
+      <p class="body" data-rv style="--d:.24s;margin-top:1.3em">Es el interés extra que debe pagar el Tesoro para convencer a los inversionistas. Se mide en <b style="color:var(--ink)">puntos básicos</b>: 1% = 100 p.b.</p>
+    </div>
+
+    <div class="chartcard" data-rv style="--d:.14s">
+      <svg class="chart chart--dense" viewBox="0 26 1040 208" role="img" aria-label="Termómetro de la prima de riesgo">
+        <!-- bandas -->
+        <rect x="60" y="86" width="131" height="26" fill="rgba(16,15,14,.06)"/>
+        <rect x="191" y="86" width="263" height="26" fill="rgba(192,146,43,.14)"/>
+        <rect x="454" y="86" width="526" height="26" fill="rgba(176,18,27,.10)"/>
+
+        <!-- eje -->
+        <line x1="60" y1="112" x2="980" y2="112" stroke="rgba(16,15,14,.3)" stroke-width="1"/>
+        <g>
+          <line x1="60" y1="112" x2="60" y2="120" stroke="rgba(16,15,14,.4)"/>
+          <line x1="191" y1="112" x2="191" y2="120" stroke="rgba(16,15,14,.4)"/>
+          <line x1="454" y1="112" x2="454" y2="120" stroke="rgba(16,15,14,.4)"/>
+          <line x1="717" y1="112" x2="717" y2="120" stroke="rgba(16,15,14,.4)"/>
+          <line x1="980" y1="112" x2="980" y2="120" stroke="rgba(16,15,14,.4)"/>
+          <text x="60" y="140" class="lbl" text-anchor="middle">0</text>
+          <text x="191" y="140" class="lbl" text-anchor="middle">100</text>
+          <text x="454" y="140" class="lbl" text-anchor="middle">300</text>
+          <text x="717" y="140" class="lbl" text-anchor="middle">500</text>
+          <text x="980" y="140" class="lbl" text-anchor="middle">700 p.b.</text>
+        </g>
+
+        <!-- zona de confianza -->
+        <text x="60" y="76" class="ann" >zona de confianza</text>
+        <text x="454" y="76" class="ann">zona de tensión</text>
+
+        <!-- marcador España hoy -->
+        <g>
+          <line x1="126" y1="72" x2="126" y2="128" stroke="#B0121B" stroke-width="2"/>
+          <circle cx="126" cy="112" r="7" fill="#B0121B" class="pulse"/>
+          <text x="126" y="62" class="val" fill="#B0121B" text-anchor="middle">ESPAÑA 2025 · ~50</text>
+        </g>
+
+        <!-- marcador Alemania -->
+        <g>
+          <line x1="60" y1="96" x2="60" y2="128" stroke="#100F0E" stroke-width="1.5"/>
+          <text x="60" y="176" class="ann" text-anchor="start">Alemania · 0 por definición</text>
+        </g>
+
+        <!-- crisis 2012 -->
+        <g>
+          <line x1="899" y1="96" x2="899" y2="128" stroke="rgba(16,15,14,.55)" stroke-width="1.5" stroke-dasharray="3 4"/>
+          <text x="899" y="176" class="ann" text-anchor="end">crisis de deuda 2012 · &gt;600</text>
+        </g>
+      </svg>
+
+      <div class="doc" style="margin-top:clamp(14px,2vw,26px);display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--hair);border:1px solid var(--hair)">
+        <div style="background:var(--bone);padding:clamp(10px,1.1vw,18px)">
+          <div class="mono" style="font-size:clamp(18px,2.2vw,34px)">~50</div>
+          <div class="small" style="letter-spacing:.16em">2025 · p.b.</div>
+        </div>
+        <div style="background:var(--bone);padding:clamp(10px,1.1vw,18px)">
+          <div class="mono" style="font-size:clamp(18px,2.2vw,34px)">74</div>
+          <div class="small" style="letter-spacing:.16em">2021 · p.b.</div>
+        </div>
+        <div style="background:var(--bone);padding:clamp(10px,1.1vw,18px)">
+          <div class="mono" style="font-size:clamp(18px,2.2vw,34px)">109</div>
+          <div class="small" style="letter-spacing:.16em">2022 · pico anual</div>
+        </div>
+      </div>
+      <p class="small" style="margin-top:.9em">Mínimo de los últimos 17 años: el mercado presta a España casi al precio de Alemania.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 14 GRÁFICO PRIMA -->
+<section class="slide flat" data-section="03 · Riesgo país" data-notes="La serie cuenta tres historias. 2021: el BCE comprando deuda masivamente mantiene la prima baja. 2022: el pico, con la inflación y la subida de tipos; llegó a tocar 135 p.b. a mitad de año. 2023 y 2024: la calma, con España creciendo más que sus vecinos. 2025: el mínimo, con las agencias mejorando la calificación.">
+  <div class="wrap">
+    <div class="row" style="justify-content:space-between;align-items:flex-end;margin-bottom:clamp(16px,2.2vw,34px)">
+      <div class="stack">
+        <div class="eyebrow" data-rv><span class="red">03</span>&nbsp; Prima de riesgo · p.b.</div>
+        <h2 class="title title--m" data-rv style="--d:.08s;margin-top:.25em">Del susto al mínimo<br>en 17 años.</h2>
+      </div>
+      <div class="small" data-rv style="--d:.16s;text-align:right;max-width:24ch">Spread del bono a 10 años frente al Bund alemán.</div>
+    </div>
+
+    <div class="chartcard" data-rv style="--d:.12s">
+      <svg class="chart" viewBox="0 0 1040 400" role="img" aria-label="Evolución de la prima de riesgo 2021-2025">
+        <defs>
+          <linearGradient id="prFill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#B0121B" stop-opacity=".18"/>
+            <stop offset="1" stop-color="#B0121B" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <g>
+          <line class="grid" x1="90" y1="330" x2="1000" y2="330"/>
+          <line class="grid" x1="90" y1="270" x2="1000" y2="270"/>
+          <line class="grid" x1="90" y1="210" x2="1000" y2="210"/>
+          <line class="grid" x1="90" y1="150" x2="1000" y2="150"/>
+          <line class="grid" x1="90" y1="90" x2="1000" y2="90"/>
+          <text x="54" y="334" class="lbl">0</text>
+          <text x="54" y="274" class="lbl">30</text>
+          <text x="54" y="214" class="lbl">60</text>
+          <text x="54" y="154" class="lbl">90</text>
+          <text x="54" y="94" class="lbl">120</text>
+        </g>
+
+        <path d="M140 182 L380 112 L620 136 L860 190 L980 232 L980 330 L140 330 Z" fill="url(#prFill)"/>
+        <path d="M140 182 L380 112 L620 136 L860 190 L980 232"
+              fill="none" stroke="#B0121B" stroke-width="2.6" stroke-linejoin="round" class="draw"/>
+
+        <g class="pts">
+          <circle cx="140" cy="182" r="5" fill="#100F0E"/>
+          <circle cx="380" cy="112" r="5" fill="#100F0E"/>
+          <circle cx="620" cy="136" r="5" fill="#100F0E"/>
+          <circle cx="860" cy="190" r="5" fill="#100F0E"/>
+          <circle cx="980" cy="232" r="6" fill="#B0121B"/>
+        </g>
+
+        <text x="140" y="160" class="val" text-anchor="middle">74</text>
+        <text x="380" y="90" class="val" text-anchor="middle">109</text>
+        <text x="620" y="114" class="val" text-anchor="middle">97</text>
+        <text x="860" y="168" class="val" text-anchor="middle">70</text>
+        <text x="980" y="210" class="val" text-anchor="middle" fill="#B0121B">~49</text>
+
+        <text x="140" y="362" class="lbl" text-anchor="middle">2021</text>
+        <text x="380" y="362" class="lbl" text-anchor="middle">2022</text>
+        <text x="620" y="362" class="lbl" text-anchor="middle">2023</text>
+        <text x="860" y="362" class="lbl" text-anchor="middle">2024</text>
+        <text x="980" y="362" class="lbl" text-anchor="middle">2025</text>
+
+        <g class="anns">
+          <text x="140" y="390" class="ann" text-anchor="middle">BCE comprando deuda</text>
+          <text x="380" y="390" class="ann" text-anchor="middle">inflación y tipos</text>
+          <text x="620" y="390" class="ann" text-anchor="middle">calma</text>
+          <text x="860" y="390" class="ann" text-anchor="middle">recortes del BCE</text>
+          <text x="980" y="390" class="ann" text-anchor="middle">mínimo 17 años</text>
+        </g>
+
+        <!-- pico intradía 2022 -->
+        <g>
+          <line x1="380" y1="112" x2="380" y2="76" stroke="rgba(176,18,27,.4)" stroke-dasharray="3 4"/>
+          <text x="392" y="72" class="ann" fill="#B0121B">pico intradía ~135</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 15 POR QUÉ CONFÍAN -->
+<section class="slide dark" data-section="03 · Riesgo país" data-notes="Tres razones por las que el mercado presta barato a un país con deuda del 100% del PIB. Primera: se financia con ahorro propio, no depende de extranjeros que puedan asustarse. Segunda: crece por encima de la eurozona. Tercera: está consolidando el déficit, del 6,9% en 2021 al 2,4% en 2025. Las calificadoras lo han reconocido con mejoras de nota.">
+  <div class="wrap split split--60">
+    <div class="stack">
+      <div class="eyebrow" data-rv><span style="color:var(--red-2)">03</span>&nbsp; La paradoja</div>
+      <h2 class="title title--m" data-rv style="--d:.08s;margin-top:.3em">Debe el 100% del PIB<br>y paga como Alemania.</h2>
+      <div class="reasons" style="margin-top:clamp(20px,2.6vw,40px)">
+        <div class="reason" data-rv style="--d:.16s">
+          <span class="n">01</span>
+          <div>
+            <h4>Se financia con ahorro propio</h4>
+            <p>Con superávit externo no depende de que los extranjeros le presten todos los días.</p>
+          </div>
+        </div>
+        <div class="reason" data-rv style="--d:.24s">
+          <span class="n">02</span>
+          <div>
+            <h4>Crece por encima de la eurozona</h4>
+            <p>2,8% en 2025, con el mercado laboral en su mejor nivel en más de una década.</p>
+          </div>
+        </div>
+        <div class="reason" data-rv style="--d:.32s">
+          <span class="n">03</span>
+          <div>
+            <h4>Está consolidando el déficit</h4>
+            <p>Del 6,9% del PIB en 2021 al 2,4% en 2025. Las agencias han mejorado la nota.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="kpis" data-rv style="--d:.14s">
+      <div class="kpi"><span class="v">2,8<small>%</small></span><span class="k">Crecimiento PIB 2025</span></div>
+      <div class="kpi"><span class="v">−2,4<small>%</small></span><span class="k">Déficit público 2025</span></div>
+      <div class="kpi"><span class="v">&gt;100<small>%</small></span><span class="k">Deuda sobre PIB</span></div>
+      <div class="kpi"><span class="v">~50<small> p.b.</small></span><span class="k">Prima de riesgo</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 16 DIVISOR 04 -->
+<section class="slide divider dark" data-section="04 · Déficits gemelos" data-notes="Último bloque, el que une todo. Aquí está la respuesta a la pregunta central del parcial: ¿existen déficits gemelos en España? No. Y la demostración es una identidad contable, no una opinión.">
+  <div class="divider__bg" style="background-image:url('assets/img/metropolis.jpg');background-position:38% 42%"></div>
+  <div class="divider__veil"></div>
+  <div class="stripe"></div>
+  <div class="ghost parallax" style="--px:-24px;--py:-10px">04</div>
+  <div class="wrap" style="max-width:60%">
+    <div class="eyebrow" data-rv style="color:rgba(239,235,228,.6)"><span class="red">Sección 04</span>&nbsp; de 04</div>
+    <h2 data-rv style="--d:.08s">Déficits<br>gemelos</h2>
+    <p data-rv style="--d:.18s">La identidad macroeconómica que siempre se cumple, y lo que revela del caso español.</p>
+    <div class="row" style="margin-top:clamp(18px,2.4vw,34px)" data-rv style="--d:.28s">
+      <a class="btn btn--ghost" href="#17" data-go="17">Entrar al bloque <i>→</i></a>
+    </div>
+  </div>
+  <div class="divider__glass" data-rv style="--d:.36s">
+    <span class="k">La clave del bloque</span>
+    <b>Hay déficit público, pero no déficit externo.</b>
+    <div class="rowdot"><i></i><i></i><i></i><i class="on"></i></div>
+  </div>
+</section>
+
+<!-- ============================================================ 17 IDENTIDAD -->
+<section class="slide dark" data-section="04 · Déficits gemelos" data-notes="Esta identidad no es una teoría, es contabilidad: siempre se cumple. El balance del sector privado más el del sector público es igual al balance externo. Con esta ecuación se puede responder cualquier pregunta de déficits gemelos: basta con mirar los tres términos. Si el privado está en superávit grande, el público puede estar en déficit sin que el externo lo esté.">
+  <div class="wrap" style="text-align:center">
+    <div class="eyebrow plain" style="justify-content:center;margin-bottom:clamp(24px,4vw,64px)" data-rv><span class="red">04</span>&nbsp; La identidad contable</div>
+
+    <div class="formula" data-rv style="--d:.1s">
+      <span class="term bone">(S<sub>priv</sub> − I<sub>priv</sub>)</span>
+      <span class="eq">+</span>
+      <span class="term">(T − G)</span>
+      <span class="eq">=</span>
+      <span class="term gold">(X − M)</span>
+      <span class="eq">=</span>
+      <span style="color:rgba(239,235,228,.55)">CC</span>
+    </div>
+
+    <div class="formula-caps" style="text-align:left">
+      <div data-rv style="--d:.24s">
+        <div class="k">Sector privado</div>
+        <p>Ahorro de familias y empresas menos su inversión. En España: <b style="color:var(--bone)">+5,6% del PIB</b>.</p>
+      </div>
+      <div data-rv style="--d:.32s">
+        <div class="k">Sector público</div>
+        <p>Impuestos menos gasto público. En España: <b style="color:var(--bone)">−2,4% del PIB</b>.</p>
+      </div>
+      <div data-rv style="--d:.4s">
+        <div class="k">Sector externo</div>
+        <p>Exportaciones menos importaciones. En España: <b style="color:var(--bone)">+3,2% del PIB</b>.</p>
+      </div>
+    </div>
+
+    <p class="small" style="margin-top:clamp(18px,2.6vw,38px);letter-spacing:.04em" data-rv style="--d:.48s">(+5,6) + (−2,4) = +3,2 · La cuenta cuadra y el superávit externo sale del ahorro privado.</p>
+  </div>
+</section>
+
+<!-- ============================================================ 18 NO GEMELOS -->
+<section class="slide" data-section="04 · Déficits gemelos" data-notes="Respuesta directa: no hay déficits gemelos. El sector privado ahorra 5,6 puntos del PIB más de lo que invierte; eso cubre el 2,4 del déficit público y todavía sobran 3,2 que España presta al exterior. La clave conceptual: los gemelos aparecen cuando el sector privado está equilibrado o desahorrando. En España no lo está.">
+  <div class="wrap">
+    <div class="row" style="justify-content:space-between;align-items:flex-end;margin-bottom:clamp(22px,3vw,48px)">
+      <div class="stack">
+        <div class="eyebrow" data-rv><span class="red">04</span>&nbsp; ¿Existen déficits gemelos?</div>
+        <h2 class="title title--m" data-rv style="--d:.06s;margin-top:.26em">No. Y la identidad<br>lo demuestra.</h2>
+      </div>
+      <p class="small" data-rv style="--d:.14s;max-width:30ch;text-align:right">Déficits gemelos = déficit fiscal <em>y</em> déficit externo al mismo tiempo.</p>
+    </div>
+
+    <div class="bars">
+      <div class="bar" data-rv style="--d:.1s">
+        <span class="bar__k">Privado<br><span style="color:var(--stone)">S − I</span></span>
+        <div class="bar__track"><div class="bar__fill pos" style="--w:46.7%;width:46.7%;left:50%;--d:.2s"></div></div>
+        <span class="bar__v">+5,6%</span>
+      </div>
+      <div class="bar" data-rv style="--d:.16s">
+        <span class="bar__k">Público<br><span style="color:var(--stone)">T − G</span></span>
+        <div class="bar__track"><div class="bar__fill neg" style="--w:20%;width:20%;right:50%;--d:.32s"></div></div>
+        <span class="bar__v neg">−2,4%</span>
+      </div>
+      <div class="bar" data-rv style="--d:.22s">
+        <span class="bar__k">Externo<br><span style="color:var(--stone)">X − M</span></span>
+        <div class="bar__track"><div class="bar__fill pos" style="--w:26.7%;width:26.7%;left:50%;--d:.44s;background:var(--gold)"></div></div>
+        <span class="bar__v" style="color:var(--gold)">+3,2%</span>
+      </div>
+    </div>
+
+    <div class="row" style="justify-content:space-between;align-items:flex-start;gap:clamp(20px,3vw,60px);margin-top:clamp(26px,3.6vw,56px);flex-wrap:wrap">
+      <p class="quote" data-rv style="--d:.5s;max-width:30ch;font-size:clamp(16px,1.6vw,26px)">El ahorro privado no solo cubre el déficit: <b>sobra</b>.</p>
+      <p class="body" data-rv style="--d:.56s;max-width:42ch">Los gemelos aparecen cuando el sector privado está equilibrado o desahorrando. Aquí ocurre lo contrario: familias y empresas ahorran mucho más de lo que invierten, y ese exceso financia al Estado y al resto del mundo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 19 CROWDING OUT EXTERNO -->
+<section class="slide dark" data-section="04 · Déficits gemelos" data-notes="La teoría del crowding out externo: el déficit sube la tasa, entran capitales, se aprecia la moneda, caen las exportaciones y suben las importaciones. El problema para España es que la cadena se rompe en el tercer eslabón: no tiene tipo de cambio propio. El euro no se aprecia porque el Tesoro español emita más deuda. Por eso no hay crowding out externo.">
+  <div class="wrap">
+    <div class="eyebrow" data-rv><span style="color:var(--red-2)">04</span>&nbsp; Crowding out externo</div>
+    <h2 class="title title--m" data-rv style="--d:.06s;margin:.26em 0 clamp(22px,3vw,44px);max-width:26ch">La cadena que en España<br>se rompe en el eslabón 3.</h2>
+
+    <div class="chain">
+      <div class="chain__item" data-rv style="--d:.12s">
+        <span class="k">01</span>
+        <h5>Sube el gasto público</h5>
+        <span class="small" style="color:rgba(239,235,228,.45)">G − T &gt; 0</span>
+      </div>
+      <div class="chain__item" data-rv style="--d:.18s">
+        <span class="k">02</span>
+        <h5>Suben las tasas internas</h5>
+        <span class="small" style="color:rgba(239,235,228,.45)">r ↑</span>
+      </div>
+      <div class="chain__item off" data-rv style="--d:.24s">
+        <span class="k">03</span>
+        <h5>Se aprecia la moneda</h5>
+        <span class="small" style="color:rgba(239,235,228,.45)">España no tiene moneda propia</span>
+      </div>
+      <div class="chain__item off" data-rv style="--d:.3s">
+        <span class="k">04</span>
+        <h5>Caen las exportaciones</h5>
+        <span class="small" style="color:rgba(239,235,228,.45)">El canal no se transmite</span>
+      </div>
+      <div class="chain__item off" data-rv style="--d:.36s">
+        <span class="k">05</span>
+        <h5>Aparece el déficit externo</h5>
+        <span class="small" style="color:rgba(239,235,228,.45)">La CC sigue en superávit</span>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2.4vw,44px);margin-top:clamp(26px,3.6vw,60px);padding-top:1.2em;border-top:1px solid var(--hair-d2)">
+      <div data-rv style="--d:.46s">
+        <div class="k" style="font-family:var(--cond);font-size:clamp(9px,.68vw,11px);letter-spacing:.22em;color:var(--red-2)">No hay canal cambiario</div>
+        <p class="small" style="margin-top:.5em;line-height:1.55">El euro no sube porque el Tesoro español emita más deuda: la moneda es de 20 países.</p>
+      </div>
+      <div data-rv style="--d:.52s">
+        <div class="k" style="font-family:var(--cond);font-size:clamp(9px,.68vw,11px);letter-spacing:.22em;color:var(--red-2)">Financiación propia</div>
+        <p class="small" style="margin-top:.5em;line-height:1.55">Con superávit externo, España no depende de capitales extranjeros que puedan retirarse.</p>
+      </div>
+      <div data-rv style="--d:.58s">
+        <div class="k" style="font-family:var(--cond);font-size:clamp(9px,.68vw,11px);letter-spacing:.22em;color:var(--red-2)">Riesgo país contenido</div>
+        <p class="small" style="margin-top:.5em;line-height:1.55">Esa independencia explica una prima de riesgo de 50 p.b. con una deuda del 100% del PIB.</p>
+      </div>
+    </div>
+  </div>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__inner">
+      <span>SIN DÉFICITS GEMELOS</span><span>·</span><span>+3,2% CUENTA CORRIENTE</span><span>·</span><span>~50 P.B. DE PRIMA</span><span>·</span><span>100% DEUDA / PIB</span><span>·</span>
+      <span>SIN DÉFICITS GEMELOS</span><span>·</span><span>+3,2% CUENTA CORRIENTE</span><span>·</span><span>~50 P.B. DE PRIMA</span><span>·</span><span>100% DEUDA / PIB</span><span>·</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 20 IMPLICACIONES -->
+<section class="slide" data-section="04 · Déficits gemelos" data-notes="Cierre analítico. Lo bueno: no sufre crowding out externo, se financia con ahorro propio y el riesgo país es mínimo. Lo malo: que a las empresas les sobre ahorro significa que invierten poco. Y baja inversión hoy es baja productividad y salarios bajos mañana. Esa es la verdadera tarea pendiente del modelo español.">
+  <div class="wrap">
+    <div class="eyebrow" data-rv><span class="red">04</span>&nbsp; Implicaciones</div>
+    <h2 class="title title--m" data-rv style="--d:.06s;margin:.26em 0 clamp(20px,2.6vw,40px)">Lo que España gana<br>y lo que le queda debiendo.</h2>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(10px,1.4vw,24px)">
+      <article class="card" style="background:var(--chalk)" data-rv style="--d:.12s">
+        <span class="card__k">01 · Ventaja</span>
+        <h4>Inmune al crowding out externo</h4>
+        <p>Sin tipo de cambio propio, el déficit fiscal no encarece las exportaciones ni el turismo.</p>
+      </article>
+      <article class="card" style="background:var(--chalk)" data-rv style="--d:.2s">
+        <span class="card__k">02 · Ventaja</span>
+        <h4>Financiación sin extranjeros</h4>
+        <p>El superávit externo reduce la dependencia de capitales que puedan asustarse y huir.</p>
+      </article>
+      <article class="card" style="background:var(--ink);color:var(--bone);border-color:var(--ink)" data-rv style="--d:.28s">
+        <span class="card__k">03 · Costo</span>
+        <h4>Inversión privada baja</h4>
+        <p style="color:rgba(239,235,228,.7)">Que sobre ahorro también significa que las empresas invierten poco: menos productividad y salarios más bajos en el futuro.</p>
+      </article>
+    </div>
+
+    <div class="row" style="justify-content:space-between;align-items:baseline;margin-top:clamp(24px,3.2vw,50px);padding-top:1.1em;border-top:1px solid var(--hair);gap:2em;flex-wrap:wrap" data-rv style="--d:.38s">
+      <span class="small mono" style="letter-spacing:.2em">LA TAREA PENDIENTE</span>
+      <span class="serif" style="font-size:clamp(15px,1.5vw,24px);color:var(--ink)">Convertir el ahorro en inversión productiva.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 21 CIERRE -->
+<section class="slide closing" data-section="Cierre" data-notes="Cierre: tres conclusiones que resumen todo el parcial. Si solo se recuerda una idea, que sea esta: el resultado externo no depende del déficit público, depende del balance del sector privado. Y la pregunta para el debate: ¿es sostenible una economía que crece con tan poca inversión?">
+  <img class="closing__map parallax" style="--px:-14px;--py:8px" src="assets/img/mapa.jpg" alt="Mapa de España con la bandera" aria-hidden="true">
+  <div class="chip chip--light bob" style="right:9vw;top:26vh;--d:.5s" data-rv><b>≈100%</b><span>Deuda sobre PIB</span></div>
+  <div class="chip bob bob--slow" style="right:26vw;top:66vh;--d:.6s" data-rv><b>+3,2%</b><span>Cuenta corriente</span></div>
+
+  <div class="wrap" style="max-width:60%">
+    <div class="eyebrow" data-rv><span class="red">04</span>&nbsp; Conclusión</div>
+    <h2 class="title" data-rv style="--d:.06s;margin-top:.3em;max-width:20ch">Un país sin gemelos,<br>con una tarea<br>pendiente.</h2>
+
+    <ul class="bullets" style="margin-top:clamp(18px,2.6vw,40px);max-width:44ch">
+      <li data-rv style="--d:.18s"><b>01</b><span>El crowding out interno existe, pero el euro lo atenúa: sin moneda propia no hay canal cambiario.</span></li>
+      <li data-rv style="--d:.26s"><b>02</b><span>La balanza de pagos y la prima de riesgo son la prueba: España se financia con su propio ahorro.</span></li>
+      <li data-rv style="--d:.34s"><b>03</b><span>No hay déficits gemelos porque el superávit privado absorbe el déficit público.</span></li>
+    </ul>
+
+    <p class="serif" data-rv style="--d:.44s;margin-top:clamp(20px,2.8vw,44px);font-size:clamp(16px,1.55vw,26px);max-width:30ch;color:var(--mute)">
+      ¿Es sostenible crecer con tan poca inversión?
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================ 22 FUENTES -->
+<section class="slide dark" data-section="Fuentes" data-notes="Fuentes y nota metodológica. Aclarar que las cifras del caso son las del documento del parcial, contrastadas con Banco de España, Eurostat, INE y BCE. Recomiendo mencionar que la prima de riesgo de 2025 se mueve en un rango de 43 a 55 puntos básicos según el corte.">
+  <div class="wrap">
+    <div class="row" style="justify-content:space-between;align-items:flex-end;margin-bottom:clamp(16px,2.4vw,36px)">
+      <div class="stack">
+        <div class="eyebrow" data-rv><span style="color:var(--red-2)">05</span>&nbsp; Fuentes</div>
+        <h2 class="title title--m" data-rv style="--d:.06s;margin-top:.24em">De dónde salen los números.</h2>
+      </div>
+      <span class="small" data-rv style="--d:.12s;letter-spacing:.16em">DATOS 2021—2025</span>
+    </div>
+
+    <div class="sources">
+      <div class="src" data-rv style="--d:.14s"><b>01</b><div>Banco de España — <a href="https://www.bde.es">Balanza de pagos y posición de inversión internacional</a>. Cuenta corriente y capacidad de financiación.</div></div>
+      <div class="src" data-rv style="--d:.2s"><b>02</b><div>Eurostat / INE — <a href="https://ec.europa.eu/eurostat">Cuenta corriente, déficit y deuda pública</a> en % del PIB.</div></div>
+      <div class="src" data-rv style="--d:.26s"><b>03</b><div>Banco Central Europeo — <a href="https://www.ecb.europa.eu">Tipos de interés y compras de deuda</a>. Bund alemán y bono español a 10 años.</div></div>
+      <div class="src" data-rv style="--d:.32s"><b>04</b><div>Ministerio de Economía — <a href="https://www.mineco.gob.es">Ejecución presupuestaria</a> y objetivo de déficit.</div></div>
+      <div class="src" data-rv style="--d:.38s"><b>05</b><div>Documento del parcial — <em>«Parcial de Macroeconomía: Análisis del Caso de España (2021—2025)</em>».</div></div>
+      <div class="src" data-rv style="--d:.44s"><b>06</b><div>Datos de turismo — <a href="https://www.mintur.gob.es">Ministerio de Industria y Turismo</a>, cierre de 2025.</div></div>
+    </div>
+
+    <div style="margin-top:clamp(24px,3.4vw,56px);padding-top:1.2em;border-top:1px solid var(--hair-d2);display:flex;justify-content:space-between;align-items:baseline;gap:2em;flex-wrap:wrap" data-rv style="--d:.5s">
+      <span class="small" style="max-width:60ch">Nota: la prima de riesgo de 2025 se mueve en un rango de 43 a 55 p.b. según el corte. Las cifras del caso se mantienen tal como aparecen en el documento del parcial.</span>
+      <span class="serif" style="font-size:clamp(15px,1.4vw,22px);color:rgba(239,235,228,.8)">Gracias.</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<aside class="notes" id="notes"><h6>Notas del expositor · N para cerrar</h6><div id="notesBody"></div></aside>
+<script src="app.js"></script>
+</body>
+</html>
